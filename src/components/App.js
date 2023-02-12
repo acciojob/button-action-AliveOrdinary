@@ -5,13 +5,14 @@ const App = (props) => {
 
 
   const renderPara= ()=>{
-    document.getElementById("para").style.display = "block";
+    const [isClicked, setIsClicked] = useState(false);
   }
   return (
     <div className="App" id="main">
       // Do not alter the main div
-      <p id="para">Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p>
-      <button id="click" onClick={renderPara}>Click me</button>
+      {isClicked && (<p id="para">Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p>)}
+      
+      <button id="click" onClick={handleClick}>Click me</button>
     </div>
   );
 }
