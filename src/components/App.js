@@ -4,7 +4,7 @@ import './../styles/App.css';
 const App = (props) => {
 
 
-  const renderPara= ()=>{
+  const handleClick= ()=>{
     const [isClicked, setIsClicked] = useState(false);
   }
   return (
